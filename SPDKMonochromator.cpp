@@ -88,6 +88,7 @@ void SPDKMonochromator::Begin()
 	Enqueue(CommandType::SlitWidthGetAll);
 	Enqueue(CommandType::WavelengthGet);
 	Enqueue(CommandType::ScanSpeedGet);
+	Enqueue(CommandType::SlitWidthSetAll,1000);
 	Mode = ModeType::Idle;
 }
 void SPDKMonochromator::SetRecievedCallback(FinishedListener Finished)
